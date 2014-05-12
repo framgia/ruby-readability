@@ -382,7 +382,7 @@ module Readability
         header.remove if class_weight(header) < 0 || get_link_density(header) > 0.33
       end
 
-      node.css("form, object, iframe, embed").each do |elem|
+      node.css("form, object, embed").each do |elem|
         elem.remove
       end
 
